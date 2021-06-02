@@ -1,0 +1,76 @@
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.start {
+    text-align: center;
+
+}
+
+/* .scores {
+    float:left */
+}  
+
+.timer {
+    float:right;
+}
+
+#start { 
+    background-color: #3d0066; 
+    color: white;
+    border: 2px solid #3d0066;
+    border-radius: 5px;
+    
+}
+
+#Submit {
+    background-color: #3d0066;
+    color: white;
+    border: 2px solid #3d0066;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #3d0066;
+    color: white;
+    border: 2px solid #3d0066;
+    border-radius: 5px;
+    
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 120%;
+}
+
+div {
+    display: block;
+}
+
+<!--
+.btn:hover {
+    background: color #e6e6e6;
+    opacity: 0.7;
+}
+#Submit:hover {
+    background: color #e6e6e6;
+    opacity: 0.7;
+}
+#start:hover {
+    background: color #e6e6e6;
+    opacity: 0.7;
+}
+
+/* Need to:
+    bold & center quiz questions 
+    change postion of timer + view-highscores  */
+    
