@@ -23,10 +23,10 @@ In this activity I learnt:
 
 * How to select and dynamically generate HTML elements and content using Web API methods.
 
-https://conso97.github.io/password-generator/
+https://conso97.github.io/med-quiz/
 
 <img id="styledImage"
-    src="MedQuiz.jpg" width="70%" height="70%"
+    src="MedQuiz.jpg" width="70%" height="70%";
     src="highscore.jpg" width="70%" height="70%"
 alt="Medical Quiz Challenge"
   />
