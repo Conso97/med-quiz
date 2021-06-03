@@ -26,7 +26,7 @@ In this activity I learnt:
 https://conso97.github.io/med-quiz/
 
 <img id="styledImage"
-    src="MedQuiz.jpg" width="70%" height="70%";
+    src="MedQuiz.jpg" width="70%" height="70%"
     src="highscore.jpg" width="70%" height="70%"
 alt="Medical Quiz Challenge"
   />
