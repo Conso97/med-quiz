@@ -22,7 +22,7 @@ let myQuestions = [{ question: "All the traits that are passed biologically from
 
 let questionIndex = 0;
 let score = 0;
-let currentTime = 80;
+let currentTime = 75;
    
 function renderQuestion() {
   if (questionIndex >= myQuestions.length) return;
@@ -86,9 +86,9 @@ function startGame() {
 
   startTimer();
 }
-
+let gameOver = false;
 function endGame() {
-
+  gameOver = true;
   var questionScreen = document.getElementById("questions");
   var endScreen = document.getElementById("end-screen");
 
@@ -107,8 +107,11 @@ function startTimer() {
     currentTime --;
   
     if (currentTime < 0) {
-      clearInterval(timer)
+      clearInterval(timer);
       endGame();
+    } 
+    if (gameOver) {
+        clearInterval(timer);
     }
   }, 1000)
 }

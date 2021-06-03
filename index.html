@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="scores"><a href=highscores.html>View Highscore</a> </div>
-    <div class="timer">Time:
-        <span id="time">0</span>
+    <div>
+        <span class="right" class="timer">Time:
+                <span id="time">0</span>
+                
+        </span><span class="left"><a href=highscores.html class="scores">View Highscore</a></span>
     </div>
+    
     <div class="wrapper">
     <script scr="highscores.js"></script>
         
@@ -37,9 +40,18 @@
     <div id="end-screen" style="display:none;">
         <h2> All done!</h2>
             <p id="end-message">Your final score is </p>
-            <p>Enter initials:
-            <input type = "initials" value = "" id="initials">
-            <button id="Submit" onclick="submitScore()">Submit</button>
+            <!-- <p>Enter initials: -->
+            <!-- <input type = "initials" value = "" id="initials"> -->
+            <!-- <button id="Submit" type="submit" onclick="submitScore()">Submit </button> -->
+            
+            <form action="highscores.html">
+                <span>
+                Enter initials: 
+                </span>         
+                <input type = "initials" value = "" id="initial">   
+                <input type="submit" id = "Submit"/>
+                
+            </form>
             </p>
     </div>
     <div id="feedback" class="feedback hide"></div>

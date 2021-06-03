@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Highscore</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="" href="highscore.js" /> -->
 </head>
 <body>
-    High Scores
+    <div id="Highscore-screen" class="Highscore">
+    <h1>Highscores</h1>
+    <p>
+        <input type = "initials" value = "" id="initials">
+    </p>
+    <form action="index.html">
+    <button id="Goback" type="Go back" onclick="goback()">Go Back 
+    </button>
+    <form action="highscores.html">
+    <button id="Clear" type="clear" onclick="clear()">Clear Highscore </button>
+    </div>
 </body>
 </html>
+
+<script src="highscore.js"></script>
