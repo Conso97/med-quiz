@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical Quiz Challenge</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- <script type='text/javascript' > 
+        let highScores = {};
+    </script> -->
 </head>
 <body>
     <div>
@@ -14,13 +17,8 @@
                 
         </span><span class="left"><a href=highscores.html class="scores">View Highscore</a></span>
     </div>
-    
-    <div class="wrapper">
-    <script scr="highscores.js"></script>
-        
-    </div>
 
-    <div id="start-screen" class="start">
+    <div id="start-screen" class="start" style="display:block;">
         <h1>Medical Quiz Challenge</h1>
             <p>Try to answer the following medical related questions with the time limit.
             Keep in mind that incorrect answres will penalize your score/time by 10 seconds!</p>
@@ -30,26 +28,33 @@
     <div id="questions" style="display:none;">
         <span id="question"></span> <span id="result"></span>
         <div id="buttons">
-            <button type="button" class= "btn" id="1" onclick="answerQuestion('1')"></button>
-            <button type="button" class= "btn" id="2" onclick="answerQuestion('2')"></button>
-            <button type="button" class= "btn" id="3" onclick="answerQuestion('3')"></button>
-            <button type="button" class= "btn" id="4" onclick="answerQuestion('4')"></button>
+        <ul style="list-style-type:none;">
+           <li> <button type="button" class= "btn" id="1" onclick="answerQuestion('1')"></button> 
+           </li>
+           <li> <button type="button" class= "btn" id="2" onclick="answerQuestion('2')"></button>
+           </li>
+           <li> <button type="button" class= "btn" id="3" onclick="answerQuestion('3')"></button>
+           </li>
+           <li> <button type="button" class= "btn" id="4" onclick="answerQuestion('4')"></button>
+           </ul>
         </div>
     </div>
 <!-- <button type="button" id="">Next</button> -->
     <div id="end-screen" style="display:none;">
         <h2> All done!</h2>
-            <p id="end-message">Your final score is </p>
+            <p id="end-message" onclick="submitScore()">Your final score is </p>
             <!-- <p>Enter initials: -->
             <!-- <input type = "initials" value = "" id="initials"> -->
             <!-- <button id="Submit" type="submit" onclick="submitScore()">Submit </button> -->
             
-            <form action="highscores.html">
-                <span>
+            <form action="highscores.html" id="highScores" method="get">
+                <!-- <span>
                 Enter initials: 
-                </span>         
-                <input type = "initials" value = "" id="initial">   
-                <input type="submit" id = "Submit"/>
+                </span>       -->
+                <label for="initials">Enter initials:</label>   
+                <input type = "text" id="initial"> </input>  
+
+                <button type="submit" id = "Submit" onclick="submitScore()">Submit</button>
                 
             </form>
             </p>
@@ -57,6 +62,7 @@
     <div id="feedback" class="feedback hide"></div>
     </div>
     <script src="game.js"></script>
+    <script src="highscore.js"></script>
     <!-- <script src="logic.js"></script> -->
 </body>
 </html>

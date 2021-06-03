@@ -8,19 +8,13 @@
     <link rel="stylesheet" href="style.css" />
     <!-- <link rel="" href="highscore.js" /> -->
 </head>
-<body>
+<body onload="updateHighScores()">
     <div id="Highscore-screen" class="Highscore">
-    <h1>Highscores</h1>
-    <p>
-        <input type = "initials" value = "" id="initials">
-    </p>
-    <form action="index.html">
-    <button id="Goback" type="Go back" onclick="goback()">Go Back 
-    </button>
-    <form action="highscores.html">
-    <button id="Clear" type="clear" onclick="clear()">Clear Highscore </button>
+        <h1>Highscores</h1>
+        <span id="scoreList"></span>
+        <button id="Goback" type="Go back"><a href="index.html" style="color:inherit;text-decoration:none">Go Back </a></button>
+        <button id="Clear" type="text" onclick="clear()">Clear Highscore </button>
     </div>
+    <script src="highscore.js"></script>
 </body>
 </html>
-
-<script src="highscore.js"></script>

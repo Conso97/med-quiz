@@ -1,10 +1,85 @@
 
+/* Adding float to highscore and timer   */
+
+.left {
+    float:left
+}
+
+.right {
+    float:right;
+}
+
+.hide {
+    display: none;
+}
+
+/* Adding font family and size to page body  */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 120%;
+}
+
+/* Adding display block to div's */
+
+div {
+    display: block;
+}
+
+/* Set display and margin on main page paragraph */
+
 p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+
+/* Set questions to bold font  */
+
+#question {
+    font-weight: bold;
+}
+
+
+/* Aligning and positioning start, questions, end screen sections and highscores page */
+.start {
+    text-align: center;
+    position:absolute;
+    left: 20%;
+    top: 20%;
+    margin-top: -10%;
+    margin-left: 5%;
+    width: 50%;
+    height: 40%;
+}
+
+#questions {
+    text-align: left;
+    position:absolute;
+    left: 1%;
+    top: -5%;
+    margin-top: 19%;
+    margin-left: 30%;
+    width: 50%;
+    height: 10%;
+}
+
+#buttons {
+    text-align: left;
+    position:absolute;
+}
+
+#end-screen {
+    text-align: left;
+    position:absolute;
+    left: 20%;
+    top: 20%;
+    margin-top: -10%;
+    margin-left: 5%;
+    width: 50%;
+    height: 40%;
+
 }
 
 .Highscore {
@@ -19,71 +94,7 @@ p {
     width: 50%;
     height: 40%;
 }
-
-#Goback {
-    background-color: #3d0066; 
-    color: white;
-    border: 2px solid #3d0066;
-    border-radius: 5px;
-}
-
-#Goback:hover {
-    background: color #e6e6e6;
-    opacity: 0.7;
-}
-
-#Clear {
-    background-color: #3d0066; 
-    color: white;
-    border: 2px solid #3d0066;
-    border-radius: 5px;
-}
-
-#Clear:hover {
-    background: color #e6e6e6;
-    opacity: 0.7;
-}   
-
-.start {
-    text-align: center;
-    position:absolute;
-    left: 20%;
-    top: 20%;
-    margin-top: -10%;
-    margin-left: 5%;
-    width: 50%;
-    height: 40%;
-
-}
-
-.left {
-    float:left
-}
-
-.right {
-    float:right;
-}
-
-#end-screen {
-    text-align: center;
-    position:absolute;
-    left: 20%;
-    top: 20%;
-    margin-top: -10%;
-    margin-left: 5%;
-    width: 50%;
-    height: 40%;
-}
-/* 
-#end-message {
-    left: 1%;
-    top: -10%;
-    margin-top: 30%;
-    margin-left: 30%;
-    width: 50%;
-    height: 10%;
-} */
-
+/* Applying background color + border to start, answer, submit, GoBack and ClearHighscore buttons */
 #start { 
     background-color: #3d0066; 
     color: white;
@@ -98,42 +109,29 @@ p {
     border-radius: 5px;
 }
 
-#question {
-    font-weight: bold;
-}
-
-#questions {
-    text-align: center;
-    position:absolute;
-    left: 1%;
-    top: -10%;
-    margin-top: 30%;
-    margin-left: 30%;
-    width: 50%;
-    height: 10%;
-}
 .btn {
     background-color: #3d0066;
     color: white;
     border: 2px solid #3d0066;
     border-radius: 5px;
-    text-align: center;
-    
+    text-align:left;
 }
 
-.hide {
-    display: none;
+#Goback {
+    background-color: #3d0066; 
+    color: white;
+    border: 2px solid #3d0066;
+    border-radius: 5px;
 }
 
-body {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 120%;
+#Clear {
+    background-color: #3d0066; 
+    color: white;
+    border: 2px solid #3d0066;
+    border-radius: 5px;
 }
-
-div {
-    display: block;
-}
-
+  
+/* applying hover selector to start, answer, submit, GoBack and ClearHighscore buttons */
 .btn:hover {
     background: color #e6e6e6;
     opacity: 0.7;
@@ -146,8 +144,12 @@ div {
     background: color #e6e6e6;
     opacity: 0.7;
 }
-
-/* Need to:
-    bold & center quiz questions 
-    change postion of timer + view-highscores  */
+#Clear:hover {
+    background: color #e6e6e6;
+    opacity: 0.7;
+} 
+#Goback:hover {
+    background: color #e6e6e6;
+    opacity: 0.7;
+}
     
