@@ -65,11 +65,6 @@ p {
     height: 10%;
 }
 
-#buttons {
-    text-align: left;
-    position:absolute;
-}
-
 #end-screen {
     text-align: left;
     position:absolute;
@@ -114,7 +109,8 @@ p {
     color: white;
     border: 2px solid #3d0066;
     border-radius: 5px;
-    text-align:left;
+    position:relative;
+    left:-15%;
 }
 
 #Goback {
@@ -130,6 +126,15 @@ p {
     border: 2px solid #3d0066;
     border-radius: 5px;
 }
+
+#scoreElement{
+    background-color: #fae6ff; 
+    color: black;
+    text-align: left;
+    position:relative;
+    left:28%; 
+}
+
   
 /* applying hover selector to start, answer, submit, GoBack and ClearHighscore buttons */
 .btn:hover {

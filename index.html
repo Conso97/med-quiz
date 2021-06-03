@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical Quiz Challenge</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <script type='text/javascript' > 
-        let highScores = {};
-    </script> -->
 </head>
 <body>
+<!--Nav bar with the link on the left and the timer on the far right-->
+
     <div>
         <span class="right" class="timer">Time:
                 <span id="time">0</span>
@@ -18,12 +17,16 @@
         </span><span class="left"><a href=highscores.html class="scores">View Highscore</a></span>
     </div>
 
+<!--start game section (title), (Paragraph) and (button)  -->
+
     <div id="start-screen" class="start" style="display:block;">
         <h1>Medical Quiz Challenge</h1>
             <p>Try to answer the following medical related questions with the time limit.
             Keep in mind that incorrect answres will penalize your score/time by 10 seconds!</p>
         <button id= "start" onclick="startGame()">Start Quiz</button>
     </div>
+
+<!--Container for the start quiz section (question section w/ answer buttons) -->
 
     <div id="questions" style="display:none;">
         <span id="question"></span> <span id="result"></span>
@@ -37,20 +40,17 @@
            </li>
            <li> <button type="button" class= "btn" id="4" onclick="answerQuestion('4')"></button>
            </ul>
+           <hr id="grade" style="display: none;">
+            <p id="gradeValue" style="display: none;"></p>
         </div>
-    </div>
-<!-- <button type="button" id="">Next</button> -->
-    <div id="end-screen" style="display:none;">
+    </div>  
+
+<!--Submit high score section-->
+
+    <div id="end-screen" style="display:none;" class=>
         <h2> All done!</h2>
-            <p id="end-message" onclick="submitScore()">Your final score is </p>
-            <!-- <p>Enter initials: -->
-            <!-- <input type = "initials" value = "" id="initials"> -->
-            <!-- <button id="Submit" type="submit" onclick="submitScore()">Submit </button> -->
-            
+            <p id="end-message" onclick="submitScore()">Your final score is </p>  
             <form action="highscores.html" id="highScores" method="get">
-                <!-- <span>
-                Enter initials: 
-                </span>       -->
                 <label for="initials">Enter initials:</label>   
                 <input type = "text" id="initial"> </input>  
 
@@ -63,6 +63,5 @@
     </div>
     <script src="game.js"></script>
     <script src="highscore.js"></script>
-    <!-- <script src="logic.js"></script> -->
 </body>
 </html>
