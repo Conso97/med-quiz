@@ -23,6 +23,18 @@ In this activity I learnt:
 
 * How to select and dynamically generate HTML elements and content using Web API methods.
 
+
+# Technologies Used
+
+Built in visual studios with:
+
+* HTML
+* CSS
+* JavaScript
+* DOM (Document Objective Model)
+
+# Med Quiz Website #
+
 https://conso97.github.io/med-quiz/
 
 <img id="styledImage"
@@ -30,3 +42,8 @@ https://conso97.github.io/med-quiz/
     src="highscore.jpg" width="70%" height="70%"
 alt="Medical Quiz Challenge"
   />
+
+# Contact 
+
+* Name: Consolata Njeri
+* Email: Conso4u@gmail.com
