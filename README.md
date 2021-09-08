@@ -1,5 +1,5 @@
 # med-quiz
-A timed quiz on medical terminology
+A Medical Terminology timed quiz 
 
 # Motivation for this project
 
