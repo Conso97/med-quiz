@@ -7,7 +7,7 @@ Learn how to create dynamic interactive web application by creating and manipula
 
 # Reason for this project 
 
-Build a timed Medical quiz with multiple-choice questions that will feature dynamically updated HTML and CSS powered by JavaScript code that runs in the browser and has a responsive user interface.
+To build a timed Medical quiz with, multiple-choice questions, that will feature dynamically updated HTML and CSS powered by JavaScript code that runs in the browser and has a responsive user interface.
 
 # What I learned from this project 
 
