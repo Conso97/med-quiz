@@ -3,7 +3,7 @@ A Medical Terminology timed quiz
 
 # Motivation for this project
 
-learn how to create dynamic interactive web application by creating and manipulating html elements, add event listeners, create timers, and store data using javascript. 
+Learn how to create dynamic interactive web application by creating and manipulating html elements, add event listeners, create timers, and store data using javascript. 
 
 # Reason for this project 
 
